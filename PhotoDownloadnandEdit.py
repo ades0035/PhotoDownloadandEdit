@@ -51,7 +51,7 @@ def download_image(image_url):
 def process_image(image):
     img = Image.open(image)
     img = img.filter(ImageFilter.GaussianBlur(15))
-    img.thumbnail(size)
+    img.thumbnail(size) 
     img.save(f"processed/{image}")
     print(f'{image} was processed...')
 
